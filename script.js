@@ -14,10 +14,18 @@ async function init() {
   });
   select.addEventListener("change", () => {
     if (select.value) {
-      document.getElementById("stats").innerHTML = ""; // Clear previous stats when a new repo is selected
+      setupRepositoryTitle(select.value);
       fetchData(select.value);
     }
   });
+}
+
+function setupRepositoryTitle(repo) {
+  const statsDiv = document.getElementById("stats");
+  statsDiv.innerHTML = ""; // Clear previous content
+  const header = document.createElement("h2");
+  header.innerHTML = `<a href="https://github.com/${repo}" target="_blank">${repo}</a>`;
+  statsDiv.appendChild(header);
 }
 
 async function fetchData(repo) {
@@ -55,7 +63,6 @@ function displayUserStats(repo, username, userDetails, stats) {
   const statsDiv = document.getElementById("stats");
   const userDiv = document.createElement("div");
   userDiv.innerHTML = `
-      <h2><a href="https://github.com/${repo}" target="_blank">${repo}</a></h2>
       <img src="${
         userDetails.avatar_url
       }" alt="${username}'s avatar" style="width: 50px; height: auto;">
