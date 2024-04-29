@@ -1,0 +1,7 @@
+{
+    "repositories": [
+        "nyuoss/gradescope-api",
+        "nyuoss/git-service",
+        "nyuoss/project-gitignore"
+    ]
+}
