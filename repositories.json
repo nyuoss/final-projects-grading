@@ -1,7 +1,12 @@
 {
     "repositories": [
-        "nyuoss/gradescope-api",
+        "nyuoss/espeon-google-suite-tasks",
+        "nyuoss/leafeon-google-suite-tasks",
+        "nyuoss/google-suite-task-manager",
+        "nyuoss/glaceon-google-suite-tasks",
         "nyuoss/git-service",
-        "nyuoss/project-gitignore"
+        "nyuoss/gradescope-api",
+        "nyuoss/project-gitignore",
+        "unknownblueguy6/syncstream-server"
     ]
 }

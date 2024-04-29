@@ -55,6 +55,7 @@ function displayUserStats(repo, username, userDetails, stats) {
   const statsDiv = document.getElementById("stats");
   const userDiv = document.createElement("div");
   userDiv.innerHTML = `
+      <h2><a href="https://github.com/${repo}" target="_blank">${repo}</a></h2>
       <img src="${
         userDetails.avatar_url
       }" alt="${username}'s avatar" style="width: 50px; height: auto;">
