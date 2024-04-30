@@ -85,7 +85,7 @@ function displayUserStats(repo, username, userDetails, stats) {
 }
 
 async function processItems(repo, endpoint, authors, updateFunction) {
-  let url = `https://api.github.com/repos/${repo}/${endpoint}?per_page=100`;
+  let url = `https://api.github.com/repos/${repo}/${endpoint}`;
   while (url) {
     const response = await fetch(url);
     if (!response.ok) {
