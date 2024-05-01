@@ -7,6 +7,7 @@
         "nyuoss/git-service",
         "nyuoss/gradescope-api",
         "nyuoss/project-gitignore",
-        "unknownblueguy6/syncstream-server"
+        "unknownblueguy6/syncstream-server",
+        "aniket-ray/cppcmake"
     ]
 }
