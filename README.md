@@ -1,7 +1,6 @@
-# final-projects-grading
+# grading
 
-URL:
-[nyuoss.github.io/final-projects-grading](https://nyuoss.github.io/final-projects-grading/)
+URL: [nyuoss.github.io/grading](https://nyuoss.github.io/grading/)
 
 Select the project you want to grade from the dropdown menu, to display the
 statistics of the project.
